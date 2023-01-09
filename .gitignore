@@ -1,0 +1,6 @@
+.alcache/
+.alpackages/
+.snapshots/
+.output/
+
+*.app
