@@ -4,7 +4,7 @@ table 50102 Departamento
 
     fields
     {
-        field(1; "Nombre"; Code[20]) { }
+        field(1; "Nombre"; Code[30]) { }
         field(2; "DespachoAsignado"; Code[5])
         {
             // Caption = 'Regex Code';

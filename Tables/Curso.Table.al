@@ -1,4 +1,4 @@
-table 50104 Cursos
+table 50104 Curso
 {
     DataClassification = ToBeClassified;
 
@@ -11,6 +11,14 @@ table 50104 Cursos
         {
             MinValue = 0;
             DecimalPlaces = 0 : 2;
+        }
+        field(5; "Nombre Profesor"; Code[100])
+        {
+            TableRelation = Profesor.Nombre;
+        }
+        field(6; "Nombre Departamento"; Code[100])
+        {
+            TableRelation = Departamento.Nombre;
         }
     }
 
