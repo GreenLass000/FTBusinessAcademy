@@ -1,7 +1,8 @@
 ## Falta
 
-- Paginas
 - Relaciones
+- Campos Calculados
+- Campos de Filtrado
 
 ### Enlaces documentacion
 
