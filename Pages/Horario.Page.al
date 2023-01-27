@@ -4,6 +4,7 @@ page 50105 "Horario"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = Horario;
+    Caption = 'Horario';
 
     layout
     {
@@ -11,10 +12,30 @@ page 50105 "Horario"
         {
             group(GroupName)
             {
-                field(Dia; Rec.Dia) { ApplicationArea = All; }
-                field("Hora Inicio"; Rec."Hora Inicio") { ApplicationArea = All; }
-                field("Hora Fin"; Rec."Hora Fin") { ApplicationArea = All; }
-                field("Nombre Curso"; Rec."Nombre Curso") { ApplicationArea = All; }
+                field(Dia; Rec.Dia)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Dia de la Semana';
+                    ToolTip = 'Dia de la semana en la que el curso se imparte';
+                }
+                field("Hora Inicio"; Rec."Hora Inicio")
+                {
+                    ApplicationArea = All;
+                    Caption = 'Inicio';
+                    ToolTip = 'Hora de inicio del curso';
+                }
+                field("Hora Fin"; Rec."Hora Fin")
+                {
+                    ApplicationArea = All;
+                    Caption = 'Fin';
+                    ToolTip = 'Hora de fin del curso';
+                }
+                field("Nombre Curso"; Rec."Nombre Curso")
+                {
+                    ApplicationArea = All;
+                    Caption = 'Curso';
+                    ToolTip = 'Nombre del curso';
+                }
             }
         }
     }

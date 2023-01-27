@@ -4,6 +4,7 @@ page 50100 "Lista de Profesores"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = Profesor;
+    Caption = 'Profesores';
 
     layout
     {
@@ -11,11 +12,36 @@ page 50100 "Lista de Profesores"
         {
             group(GroupName)
             {
-                field(Nombre; Rec.Nombre) { ApplicationArea = All; }
-                field(Direccion; Rec.Direccion) { ApplicationArea = All; }
-                field(FechaContratacion; Rec.FechaContratacion) { ApplicationArea = All; }
-                field(Salario; Rec.Salario) { ApplicationArea = All; }
-                field("Nombre Departamento"; Rec."Nombre Departamento") { ApplicationArea = All; }
+                field(Nombre; Rec.Nombre)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Nombre';
+                    ToolTip = 'Nombre del profesor';
+                }
+                field(Direccion; Rec.Direccion)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Dirección';
+                    ToolTip = 'Dirección del profesor';
+                }
+                field(FechaContratacion; Rec.FechaContratacion)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Contrato';
+                    ToolTip = 'Fecha en la que el profesor fué contratado';
+                }
+                field(Salario; Rec.Salario)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Salario';
+                    ToolTip = 'Salario del profesor';
+                }
+                field("Nombre Departamento"; Rec."Nombre Departamento")
+                {
+                    ApplicationArea = All;
+                    Caption = 'Departamento';
+                    ToolTip = 'Nombre del departamento';
+                }
             }
         }
     }
