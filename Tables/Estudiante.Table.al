@@ -4,19 +4,20 @@ table 50103 Estudiante
 
     fields
     {
-        field(1; "Nombre"; Code[20]) { }
-        field(2; "Sexo"; Enum Sexo) { }
-        field(3; "Direccion"; Code[100]) { }
-        field(4; "Telefono"; Text[9])
+        field(1; "ID Estudiante"; Code[8]) { DataClassification = ToBeClassified; }
+        field(2; "Nombre"; Code[30]) { }
+        field(3; "Sexo"; Enum Sexo) { }
+        field(4; "Direccion"; Code[100]) { }
+        field(5; "Telefono"; Code[9])
         {
             ExtendedDatatype = PhoneNo;
         }
-        field(5; "Fecha Nacimiento"; Date) { }
+        field(6; "Fecha Nacimiento"; Date) { }
     }
 
     keys
     {
-        key(PK; "Nombre")
+        key(PK; "ID Estudiante")
         {
             Clustered = true;
         }

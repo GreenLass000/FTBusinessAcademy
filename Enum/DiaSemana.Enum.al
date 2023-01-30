@@ -1,4 +1,4 @@
-enum 50106 DiaSemana
+enum 50100 DiaSemana
 {
     Extensible = false;
 

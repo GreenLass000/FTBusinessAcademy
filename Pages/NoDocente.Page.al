@@ -36,7 +36,7 @@ page 50101 "Lista no docente"
                     Caption = 'Puesto';
                     ToolTip = 'Puesto del ayudante';
                 }
-                field("Nombre Profesor"; Rec."Nombre Profesor")
+                field("Nombre Profesor"; Rec."ID Profesor")
                 {
                     ApplicationArea = All;
                     Caption = 'Profesor';

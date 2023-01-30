@@ -4,27 +4,28 @@ table 50104 Curso
 
     fields
     {
-        field(1; "Nombre"; Code[20]) { }
-        field(2; "Descripcion"; Code[50]) { }
-        field(3; "HorasTotales"; Integer) { MinValue = 0; }
-        field(4; "TarifaLab"; Decimal)
+        field(1; "ID Curso"; Code[8]) { DataClassification = ToBeClassified; }
+        field(2; "Nombre"; Code[50]) { }
+        field(3; "Descripcion"; Code[200]) { }
+        field(4; "HorasTotales"; Integer) { MinValue = 0; }
+        field(5; "TarifaLab"; Decimal)
         {
             MinValue = 0;
             DecimalPlaces = 0 : 2;
         }
-        field(5; "Nombre Profesor"; Code[100])
+        field(6; "ID Profesor"; Code[100])
         {
-            TableRelation = Profesor.Nombre;
+            TableRelation = Profesor."ID Profesor";
         }
-        field(6; "Nombre Departamento"; Code[100])
+        field(7; "ID Departamento"; Code[100])
         {
-            TableRelation = Departamento.Nombre;
+            TableRelation = Departamento."ID Departamento";
         }
     }
 
     keys
     {
-        key(PK; "Nombre")
+        key(PK; "ID Curso")
         {
             Clustered = true;
         }

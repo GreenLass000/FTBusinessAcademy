@@ -4,19 +4,20 @@ table 50100 Profesor
 
     fields
     {
-        field(1; "Nombre"; Code[20]) { }
-        field(2; "Direccion"; Code[100]) { }
-        field(3; "FechaContratacion"; Date) { }
-        field(4; "Salario"; Decimal) { }
-        field(5; "Nombre Departamento"; Code[30])
+        field(1; "ID Profesor"; Code[8]) { DataClassification = ToBeClassified; }
+        field(2; "Nombre"; Code[30]) { }
+        field(3; "Direccion"; Code[100]) { }
+        field(4; "FechaContratacion"; Date) { }
+        field(5; "Salario"; Decimal) { }
+        field(6; "ID Departamento"; Code[8])
         {
-            TableRelation = Departamento.Nombre;
+            TableRelation = Departamento."ID Departamento";
         }
     }
 
     keys
     {
-        key(PK; "Nombre")
+        key(PK; "ID Profesor")
         {
             Clustered = true;
         }
