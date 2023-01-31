@@ -12,6 +12,12 @@ page 50104 "Lista de Cursos"
         {
             group(GroupName)
             {
+                field("ID Curso"; Rec."ID Curso")
+                {
+                    ApplicationArea = All;
+                    Caption = 'ID';
+                    ToolTip = 'ID del curso';
+                }
                 field(Nombre; Rec.Nombre)
                 {
                     ApplicationArea = All;
@@ -36,13 +42,13 @@ page 50104 "Lista de Cursos"
                     Caption = 'Tarifa';
                     ToolTip = 'Tarifa del curso';
                 }
-                field("Nombre Profesor"; Rec."Nombre Profesor")
+                field("ID Profesor"; Rec."ID Profesor")
                 {
                     ApplicationArea = All;
                     Caption = 'Profesor';
                     ToolTip = 'Nombre del profesor del curso';
                 }
-                field("Nombre Departamento"; Rec."Nombre Departamento")
+                field("ID Departamento"; Rec."ID Departamento")
                 {
                     ApplicationArea = All;
                     Caption = 'Departamento';
@@ -50,5 +56,11 @@ page 50104 "Lista de Cursos"
                 }
             }
         }
+
+           addFastTab('General') 
+           {
+
+           }
+
     }
 }

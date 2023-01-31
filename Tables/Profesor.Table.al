@@ -13,6 +13,11 @@ table 50100 Profesor
         {
             TableRelation = Departamento."ID Departamento";
         }
+        field(7; "Numero de ayudantes"; Integer)
+        {
+            FieldClass = FlowField;
+            CalcFormula = count(NoDocente where );
+        }
     }
 
     keys

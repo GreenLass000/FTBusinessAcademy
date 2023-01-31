@@ -12,6 +12,12 @@ page 50103 "Lista de Estudiantes"
         {
             group(GroupName)
             {
+                field("ID Estudiante"; Rec."ID Estudiante")
+                {
+                    ApplicationArea = All;
+                    Caption = 'ID';
+                    ToolTip = 'ID del estudiante';
+                }
                 field(Nombre; Rec.Nombre)
                 {
                     ApplicationArea = All;

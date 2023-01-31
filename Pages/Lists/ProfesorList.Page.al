@@ -12,6 +12,12 @@ page 50100 "Lista de Profesores"
         {
             group(GroupName)
             {
+                field("ID Profesor"; Rec."ID Profesor")
+                {
+                    ApplicationArea = All;
+                    Caption = 'ID';
+                    ToolTip = 'ID del profesor';
+                }
                 field(Nombre; Rec.Nombre)
                 {
                     ApplicationArea = All;
@@ -36,7 +42,7 @@ page 50100 "Lista de Profesores"
                     Caption = 'Salario';
                     ToolTip = 'Salario del profesor';
                 }
-                field("Nombre Departamento"; Rec."Nombre Departamento")
+                field("ID Departamento"; Rec."ID Departamento")
                 {
                     ApplicationArea = All;
                     Caption = 'Departamento';

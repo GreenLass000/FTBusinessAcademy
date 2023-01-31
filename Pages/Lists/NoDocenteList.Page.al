@@ -12,6 +12,12 @@ page 50101 "Lista no docente"
         {
             group(GroupName)
             {
+                field("ID NoDocente"; Rec."ID NoDocente")
+                {
+                    ApplicationArea = All;
+                    Caption = 'ID';
+                    ToolTip = 'ID del personal no docente';
+                }
                 field(Nombre; Rec.Nombre)
                 {
                     ApplicationArea = All;

@@ -30,11 +30,11 @@ page 50105 "Horario"
                     Caption = 'Fin';
                     ToolTip = 'Hora de fin del curso';
                 }
-                field("Nombre Curso"; Rec."Nombre Curso")
+                field("ID Curso"; Rec."ID Curso")
                 {
                     ApplicationArea = All;
-                    Caption = 'Curso';
-                    ToolTip = 'Nombre del curso';
+                    Caption = 'ID';
+                    ToolTip = 'ID del curso';
                 }
             }
         }

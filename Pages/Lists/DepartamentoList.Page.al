@@ -12,6 +12,12 @@ page 50102 "Lista de Departamentos"
         {
             group(GroupName)
             {
+                field("ID Departamento"; Rec."ID Departamento")
+                {
+                    ApplicationArea = All;
+                    Caption = 'ID';
+                    ToolTip = 'ID del departamento';
+                }
                 field(Nombre; Rec.Nombre)
                 {
                     ApplicationArea = All;

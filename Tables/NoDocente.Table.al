@@ -9,9 +9,9 @@ table 50101 NoDocente
         field(3; "Direccion"; Code[100]) { }
         field(4; "Salario"; Decimal) { }
         field(5; "Puesto"; Code[30]) { }
-        field(6; "ID Profesor"; Code[30])
+        field(6; "ID Profesor"; Code[8])
         {
-            TableRelation = Profesor.Nombre;
+            TableRelation = Profesor."ID Profesor";
         }
     }
 
