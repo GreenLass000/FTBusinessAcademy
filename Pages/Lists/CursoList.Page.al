@@ -57,10 +57,7 @@ page 50104 "Lista de Cursos"
             }
         }
 
-           addFastTab('General') 
-           {
 
-           }
 
     }
 }
