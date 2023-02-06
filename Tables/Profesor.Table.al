@@ -1,6 +1,7 @@
 table 50100 Profesor
 {
     DataClassification = ToBeClassified;
+    Caption = 'Profesor', Comment = 'ESP="Hola"';
 
     fields
     {
@@ -12,11 +13,6 @@ table 50100 Profesor
         field(6; "ID Departamento"; Code[8])
         {
             TableRelation = Departamento."ID Departamento";
-        }
-        field(7; "Numero de ayudantes"; Integer)
-        {
-            FieldClass = FlowField;
-            CalcFormula = count(NoDocente where );
         }
     }
 

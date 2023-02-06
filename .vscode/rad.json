@@ -1,1 +1,1 @@
-﻿{"Added":[],"Modified":[],"Removed":[]}
+﻿{"Added":[],"Modified":[{"Id":50100,"Kind":10,"Name":"Profesor","PackagePath":"/src/Tables/Profesor.Table.al"}],"Removed":[{"Id":0,"Kind":10,"Name":"","PackagePath":"/src/Pages/Cards/CursoCard.Page.al"},{"Id":50110,"Kind":12,"Name":"Ficha de cursos","PackagePath":"/src/Pages/Cards/CursoCard.Page.al"}]}
