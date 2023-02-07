@@ -11,5 +11,42 @@
 - Campos de Filtrado
 - Diseño de Páginas
 - Paginas CUE y Role Center
+- Resto de las cosas de las cards
+- Cambiar a singular los nombres y referencias de las cards para que esté igual a lo demás
+- Role Centers
+- Cue's
 
 ## Fix
+
+- Cambiar Enrolls a Registration
+
+### Traducciones
+
+- EstudianteListPage
+- DepartamentoListPage
+- CursoListPage
+- DepartamentoCardPage
+- EstudianteCardPage
+- MatriculaCardPage
+- ProfesorCardPage
+
+## Done
+
+Tabs de las cards al 100%
+
+### Idiomas añadidos al 100% (Inglés y Español)
+
+- CursoTable
+- DepartamentoTable
+- EstudianteTable
+- HorarioTable
+- MatriculaTable
+- NoDocenteTable
+- ProfesorTable
+
+- ProfesorListPage
+- NoDocenteListPage
+- HorarioListPage
+
+- SexoEnum
+- DiaSemanaEnum

@@ -4,7 +4,6 @@ page 50101 "Lista no docente"
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = NoDocente;
-    Caption = 'Ayudantes';
 
     layout
     {
@@ -15,38 +14,38 @@ page 50101 "Lista no docente"
                 field("ID NoDocente"; Rec."ID NoDocente")
                 {
                     ApplicationArea = All;
-                    Caption = 'ID';
-                    ToolTip = 'ID del personal no docente';
+                    ToolTip = 'Code of the assistant',
+                    Comment = 'ESP="Código del ayudante"';
                 }
                 field(Nombre; Rec.Nombre)
                 {
                     ApplicationArea = All;
-                    Caption = 'Nombre';
-                    ToolTip = 'Nombre del ayudante de un profesor';
+                    ToolTip = 'Assistant''s name',
+                    Comment = 'ESP="Nombre del ayudante"';
                 }
                 field(Direccion; Rec.Direccion)
                 {
                     ApplicationArea = All;
-                    Caption = 'Dirección';
-                    ToolTip = 'Dirección donde vive el ayudante';
+                    ToolTip = 'Assistant''s address',
+                    Comment = 'ESP="Dirección del ayudante"';
                 }
                 field(Salario; Rec.Salario)
                 {
                     ApplicationArea = All;
-                    Caption = 'Salario';
-                    ToolTip = 'Salario del ayudante';
+                    ToolTip = 'Assistant''s salary',
+                    Comment = 'ESP="Salario del ayudante"';
                 }
                 field(Puesto; Rec.Puesto)
                 {
                     ApplicationArea = All;
-                    Caption = 'Puesto';
-                    ToolTip = 'Puesto del ayudante';
+                    ToolTip = 'Assistant''s position',
+                    Comment = 'ESP="Puesto del ayudante"';
                 }
                 field("Nombre Profesor"; Rec."ID Profesor")
                 {
                     ApplicationArea = All;
-                    Caption = 'Profesor';
-                    ToolTip = 'Nombre del profesor al que ayuda el ayudante';
+                    ToolTip = 'Teacher''s name of the assistant',
+                    Comment = 'ESP="Nombre del profesor al que ayuda el ayudante"';
                 }
             }
         }

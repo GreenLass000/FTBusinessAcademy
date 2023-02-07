@@ -1,15 +1,15 @@
-page 50100 "Lista de Profesores"
+page 50114 "Teachers"
 {
-    PageType = List;
+    PageType = Card;
     ApplicationArea = All;
-    UsageCategory = Lists;
+    UsageCategory = Administration;
     SourceTable = Profesor;
 
     layout
     {
         area(Content)
         {
-            group(GroupName)
+            group(General)
             {
                 field("ID Profesor"; Rec."ID Profesor")
                 {
@@ -35,6 +35,11 @@ page 50100 "Lista de Profesores"
                     ToolTip = 'Teacher hire date',
                     Comment = 'ESP="Fecha de contratación del profesor"';
                 }
+
+            }
+
+            group(Laboral)
+            {
                 field(Salario; Rec.Salario)
                 {
                     ApplicationArea = All;

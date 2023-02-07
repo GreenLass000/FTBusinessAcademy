@@ -9,8 +9,8 @@ table 50104 Curso
         field(1; "ID Curso"; Code[8])
         {
             DataClassification = ToBeClassified;
-            Caption = 'ID',
-            Comment = 'ESP="ID"';
+            Caption = 'Cod',
+            Comment = 'ESP="Cod"';
         }
         field(2; "Nombre"; Code[50])
         {
@@ -24,28 +24,28 @@ table 50104 Curso
         }
         field(4; "HorasTotales"; Integer)
         {
+            MinValue = 0;
             Caption = 'Hours',
             Comment = 'ESP="Horas"';
-            MinValue = 0;
         }
         field(5; "TarifaLab"; Decimal)
         {
-            Caption = 'Rate',
-            Comment = 'ESP="Tarifa"';
             MinValue = 0;
             DecimalPlaces = 0 : 2;
+            Caption = 'Fee',
+            Comment = 'ESP="Tarifa"';
         }
         field(6; "ID Profesor"; Code[100])
         {
+            TableRelation = Profesor."ID Profesor";
             Caption = 'Teacher',
             Comment = 'ESP="Profesor"';
-            TableRelation = Profesor."ID Profesor";
         }
         field(7; "ID Departamento"; Code[100])
         {
+            TableRelation = Departamento."ID Departamento";
             Caption = 'Department',
             Comment = 'ESP="Departamento"';
-            TableRelation = Departamento."ID Departamento";
         }
     }
 
