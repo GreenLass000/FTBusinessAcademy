@@ -19,7 +19,7 @@ table 50102 Departamento
         }
         field(3; "DespachoAsignado"; Code[5])
         {
-            Caption = 'Dispatch',
+            Caption = 'Office',
             Comment = 'ESP="Despacho"';
         }
     }
