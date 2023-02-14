@@ -15,6 +15,8 @@ page 50110 "Courses"
                     ApplicationArea = All;
                     Caption = 'ID';
                     ToolTip = 'ID del curso';
+                    //Importance = Promoted;
+                    LookupPageId = "Lista de Cursos";
                 }
                 field(Nombre; Rec.Nombre)
                 {
@@ -49,6 +51,7 @@ page 50110 "Courses"
                     ApplicationArea = All;
                     Caption = 'Profesor';
                     ToolTip = 'Nombre del profesor del curso';
+                    LookupPageId = "Lista de Profesores";
                 }
                 field("ID Departamento"; Rec."ID Departamento")
                 {
@@ -56,6 +59,22 @@ page 50110 "Courses"
                     Caption = 'Departamento';
                     ToolTip = 'Nombre del departamento del curso';
                 }
+            }
+        }
+    }
+
+    actions
+    {
+        area(Processing)
+        {
+            action(ActionName)
+            {
+                ApplicationArea = All;
+
+                trigger OnAction()
+                begin
+
+                end;
             }
         }
     }
