@@ -49,6 +49,12 @@ page 50103 "Lista de Estudiantes"
                     ToolTip = 'Student''s birthday',
                     Comment = 'ESP="Fecha de nacimiento del estudiante"';
                 }
+                field("ID profesor"; Rec."ID profesor")
+                {
+                    ApplicationArea = all;
+                    ToolTip = 'Student''s teacher',
+                    Comment = 'ESP="Profesor del estudiante"';
+                }
             }
         }
     }

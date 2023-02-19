@@ -38,6 +38,12 @@ table 50103 Estudiante
             Caption = 'Birthday',
             Comment = 'ESP="Nacimiento"';
         }
+        field(7; "ID profesor"; Code[8])
+        {
+            TableRelation = Profesor."ID Profesor";
+            Caption = 'Teacher',
+            Comment = 'ESP="Profesor"';
+        }
     }
 
     keys
@@ -46,5 +52,10 @@ table 50103 Estudiante
         {
             Clustered = true;
         }
+    }
+
+    fieldgroups
+    {
+        fieldgroup(DropDown; "ID Estudiante", Nombre, "ID profesor") { }
     }
 }

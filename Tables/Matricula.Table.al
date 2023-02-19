@@ -1,7 +1,7 @@
 table 50106 "Matricula"
 {
     DataClassification = ToBeClassified;
-    Caption = 'Enroll',
+    Caption = 'Registration',
     Comment = 'ESP="Matrícula"';
 
     fields
@@ -28,6 +28,12 @@ table 50106 "Matricula"
             Caption = 'Time',
             Comment = 'ESP="Hora"';
         }
+        field(5; "Tutor Matricula"; Code[8])
+        {
+            TableRelation = Estudiante."ID profesor" where("ID Estudiante" = field("ID Estudiante"));
+            Caption = 'Teacher',
+            Comment = 'ESP="Profesor"';
+        }
     }
 
     keys
@@ -36,5 +42,10 @@ table 50106 "Matricula"
         {
             Clustered = true;
         }
+    }
+
+    fieldgroups
+    {
+        fieldgroup(DropDown; "ID Curso", "ID Estudiante", "Fecha Matriculación") { }
     }
 }

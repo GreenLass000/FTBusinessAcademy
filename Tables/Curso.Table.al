@@ -47,6 +47,13 @@ table 50104 Curso
             Caption = 'Department',
             Comment = 'ESP="Departamento"';
         }
+        field(8; "No. Estudiantes"; Integer)
+        {
+            FieldClass = FlowField;
+            CalcFormula = count(Matricula where("ID Curso" = field("ID Curso")));
+            Caption = 'Student''s number',
+            Comment = 'ESP="Número de estudiantes"';
+        }
     }
 
     keys
@@ -55,5 +62,10 @@ table 50104 Curso
         {
             Clustered = true;
         }
+    }
+
+    fieldgroups
+    {
+        fieldgroup(DropDown; "ID Curso", Nombre, Descripcion, TarifaLab, "ID Profesor", "ID Departamento") { }
     }
 }

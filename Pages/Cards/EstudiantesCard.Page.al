@@ -11,30 +11,30 @@ page 50112 "Students"
         {
             group(General)
             {
-                field("ID Estudiante"; Rec."ID Estudiante")
+                field("Cod."; Rec."ID Estudiante")
                 {
                     ApplicationArea = All;
-                    Caption = 'ID';
-                    ToolTip = 'ID del estudiante';
+                    ToolTip = 'Student''s code',
+                    Comment = 'ESP="Código del estudiante"';
                 }
                 field(Nombre; Rec.Nombre)
                 {
                     ApplicationArea = All;
-                    Caption = 'Nombre';
-                    ToolTip = 'Nombre del estudiante';
+                    ToolTip = 'Student''s name',
+                    Comment = 'ESP="Nombre del estudiante"';
                 }
                 field(Sexo; Rec.Sexo)
                 {
                     ApplicationArea = All;
-                    Caption = 'Sexo';
-                    ToolTip = 'Sexo del estudiante (Hombre o Mujer)';
+                    ToolTip = 'Student''s gender',
+                    Comment = 'ESP="Sexo del estudiante"';
                 }
 
                 field("Fecha Nacimiento"; Rec."Fecha Nacimiento")
                 {
                     ApplicationArea = All;
-                    Caption = 'Fecha de nacimiento';
-                    ToolTip = 'Fecha de nacimiento del estudiante';
+                    ToolTip = 'Student''s birthday',
+                    Comment = 'ESP="Fecha de nacimiento del estudiante"';
                 }
             }
 
@@ -43,16 +43,46 @@ page 50112 "Students"
                 field(Direccion; Rec.Direccion)
                 {
                     ApplicationArea = All;
-                    Caption = 'Dirección';
-                    ToolTip = 'Direccion en la que el estudiante vive';
+                    ToolTip = 'Student''s address',
+                    Comment = 'ESP="Dirección del estudiante"';
                 }
                 field(Telefono; Rec.Telefono)
                 {
                     ApplicationArea = All;
-                    Caption = 'Teléfono';
-                    ToolTip = 'Telefono del estudiante';
+                    ToolTip = 'Student''s phone number',
+                    Comment = 'ESP="Número de teléfono del estudiante"';
                 }
             }
         }
     }
+
+    actions
+    {
+        area(Processing)
+        {
+            action("Nueva matrícula")
+            {
+                ApplicationArea = All;
+                RunObject = page "Registrations";
+                RunPageMode = Create;
+                RunPageLink = "ID Estudiante" = field("ID Estudiante");
+                Promoted = true;
+                PromotedCategory = Process;
+                PromotedIsBig = true;
+            }
+        }
+        area(Navigation)
+        {
+            action(Matrículas)
+            {
+                ApplicationArea = All;
+                RunObject = page "Registrations";
+                RunPageMode = View;
+                RunPageLink = "ID Estudiante" = field("ID Estudiante");
+            }
+        }
+    }
+
+
 }
+

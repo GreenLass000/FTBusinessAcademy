@@ -14,20 +14,20 @@ page 50111 "Departments"
                 field("ID Departamento"; Rec."ID Departamento")
                 {
                     ApplicationArea = All;
-                    Caption = 'ID';
-                    ToolTip = 'ID del departamento';
+                    ToolTip = 'Cod.',
+                    Comment = 'ESP="Cod."';
                 }
                 field(Nombre; Rec.Nombre)
                 {
                     ApplicationArea = All;
-                    Caption = 'Nombre';
-                    ToolTip = 'Nombre del departamento';
+                    ToolTip = 'Department''s name',
+                    Comment = 'ESP="Nombre del departamento"';
                 }
                 field(DespachoAsignado; Rec.DespachoAsignado)
                 {
                     ApplicationArea = All;
-                    Caption = 'Despacho';
-                    ToolTip = 'Despacho asignado al departamento';
+                    ToolTip = 'Department''s office',
+                    Comment = 'ESP="Despacho asignado al departamento"';
                 }
             }
 
@@ -35,25 +35,27 @@ page 50111 "Departments"
             {
 
             }
+
+            part("Registrations Subpage"; "Registrations Subpage")
+            {
+                Caption = 'Registrations',
+                Comment = 'Registros';
+            }
         }
     }
 
     actions
     {
-        area(Processing)
+        area(Navigation)
         {
-            action(ActionName)
+            action(Profesores)
             {
                 ApplicationArea = All;
-
-                trigger OnAction()
-                begin
-
-                end;
+                RunObject = page "Lista de Profesores";
+                RunPageLink = "ID Departamento" = field("ID Departamento");
+                RunPageMode = View;
+                Image = User;
             }
         }
     }
-
-    var
-        myInt: Integer;
 }

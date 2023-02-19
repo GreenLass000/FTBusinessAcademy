@@ -54,5 +54,13 @@ page 50114 "Teachers"
                 }
             }
         }
+
+        area(FactBoxes)
+        {
+            part("Teacher FactBox"; "Teacher FactBox")
+            {
+                SubPageLink = "ID Profesor" = field("ID Profesor");
+            }
+        }
     }
 }

@@ -14,7 +14,7 @@ page 50101 "Lista no docente"
                 field("ID NoDocente"; Rec."ID NoDocente")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Code of the assistant',
+                    ToolTip = 'Assistant''s code',
                     Comment = 'ESP="Código del ayudante"';
                 }
                 field(Nombre; Rec.Nombre)
@@ -44,7 +44,7 @@ page 50101 "Lista no docente"
                 field("Nombre Profesor"; Rec."ID Profesor")
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Teacher''s name of the assistant',
+                    ToolTip = 'Name of the assistant''s teacher',
                     Comment = 'ESP="Nombre del profesor al que ayuda el ayudante"';
                 }
             }

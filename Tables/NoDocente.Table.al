@@ -47,4 +47,9 @@ table 50101 NoDocente
             Clustered = true;
         }
     }
+
+    fieldgroups
+    {
+        fieldgroup(DropDown; "ID NoDocente", Nombre, Salario, "ID Profesor") { }
+    }
 }

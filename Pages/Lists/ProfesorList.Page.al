@@ -47,6 +47,12 @@ page 50100 "Lista de Profesores"
                     ToolTip = 'Department''s code of the teacher',
                     Comment = 'ESP="Código del departamento del profesor"';
                 }
+                field("Num ayudantes"; Rec."Num ayudantes")
+                {
+                    ApplicationArea = all;
+                    ToolTip = 'Number of assistants of the teacher',
+                    Comment = 'ESP="Número de ayudantes de un profesor"';
+                }
             }
         }
     }

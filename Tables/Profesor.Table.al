@@ -38,6 +38,20 @@ table 50100 Profesor
             Caption = 'Department',
             Comment = 'ESP="Departamento"';
         }
+        field(7; "Num ayudantes"; Integer)
+        {
+            FieldClass = FlowField;
+            CalcFormula = count(NoDocente where("ID Profesor" = field("ID Profesor")));
+            Caption = 'Assistants'' number',
+            Comment = 'ESP="Numero de ayudantes"';
+        }
+        field(8; "Num cursos"; Integer)
+        {
+            FieldClass = FlowField;
+            CalcFormula = count(Curso where("ID Profesor" = field("ID Profesor")));
+            Caption = 'Courses',
+            Comment = 'ESP="Cursos"';
+        }
     }
 
     keys
@@ -46,5 +60,10 @@ table 50100 Profesor
         {
             Clustered = true;
         }
+    }
+
+    fieldgroups
+    {
+        fieldgroup(DropDown; "ID Profesor", Nombre, FechaContratacion, Salario, "ID Departamento") { }
     }
 }

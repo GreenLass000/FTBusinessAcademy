@@ -38,7 +38,7 @@ page 50104 "Lista de Cursos"
                 field(TarifaLab; Rec.TarifaLab)
                 {
                     ApplicationArea = All;
-                    ToolTip = 'Course''s rate',
+                    ToolTip = 'Course''s fee',
                     Comment = 'ESP="Tarifa del curso"';
                 }
                 field("ID Profesor"; Rec."ID Profesor")

@@ -14,26 +14,64 @@ page 50113 "Registrations"
                 field("ID Curso"; Rec."ID Curso")
                 {
                     ApplicationArea = All;
-                    Caption = 'ID';
-                    ToolTip = 'ID del curso';
+                    LookupPageId = "Lista de Cursos";
+                    ToolTip = 'Course code',
+                    Comment = 'ESP="Código del curso"';
                 }
                 field("ID Estudiante"; Rec."ID Estudiante")
                 {
                     ApplicationArea = All;
-                    Caption = 'ID';
-                    ToolTip = 'ID del estudiante';
+                    LookupPageId = "Lista de Estudiantes";
+                    ToolTip = 'Student''s code of the course',
+                    Comment = 'ESP="Código del estudiante del curso"';
                 }
                 field("Fecha Matriculación"; Rec."Fecha Matriculación")
                 {
                     ApplicationArea = All;
-                    Caption = 'Fecha';
-                    ToolTip = 'Fecha de matriculacion';
+                    ToolTip = 'Registration''s date',
+                    Comment = 'ESP="Fecha de matriculación"';
                 }
                 field("Hora Matriculación"; Rec."Hora Matriculación")
                 {
                     ApplicationArea = All;
-                    Caption = 'Hora';
-                    ToolTip = 'Hora de matriculacion';
+                    ToolTip = 'Registration''s time',
+                    Comment = 'ESP="Hora de matriculación"';
+                }
+            }
+        }
+    }
+
+    actions
+    {
+        area(Navigation)
+        {
+            group(Informacion)
+            {
+                action(Curso)
+                {
+                    ApplicationArea = All;
+                    RunObject = page "Courses";
+                    RunPageLink = "ID Curso" = field("ID Curso");
+                    Image = Agreement;
+                }
+            }
+            group(Estudiante)
+            {
+                action(Datos)
+                {
+                    ApplicationArea = All;
+                    RunObject = page "Students";
+                    RunPageLink = "ID Estudiante" = field("ID Estudiante");
+                    RunPageMode = View;
+                    Image = PersonInCharge;
+                }
+                action(Matriculas)
+                {
+                    ApplicationArea = All;
+                    RunObject = page "Registrations";
+                    RunPageLink = "ID Curso" = field("ID Curso");
+                    RunPageMode = View;
+                    Image = Table;
                 }
             }
         }
