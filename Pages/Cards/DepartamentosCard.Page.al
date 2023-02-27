@@ -51,7 +51,7 @@ page 50111 "Departments"
             action(Profesores)
             {
                 ApplicationArea = All;
-                RunObject = page "Lista de Profesores";
+                RunObject = page "Teachers List";
                 RunPageLink = "ID Departamento" = field("ID Departamento");
                 RunPageMode = View;
                 Image = User;

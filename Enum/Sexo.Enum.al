@@ -1,4 +1,4 @@
-enum 50101 Sexo
+enum 50101 Sex
 {
     Extensible = false;
 

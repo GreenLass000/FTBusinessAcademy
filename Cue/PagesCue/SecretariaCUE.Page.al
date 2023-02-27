@@ -11,14 +11,14 @@ page 50108 "Secretaria CUE"
             {
                 field(Hombres; Rec.Hombres)
                 {
-                    DrillDownPageId = "Lista de Estudiantes";
+                    DrillDownPageId = "Students List";
                     ToolTip = 'Males',
                     Comment = 'ESP="Hombres"';
                 }
 
                 field(Mujeres; Rec.Mujeres)
                 {
-                    DrillDownPageId = "Lista de Estudiantes";
+                    DrillDownPageId = "Students List";
                     ToolTip = 'Females',
                     Comment = 'ESP="Mujeres"';
                 }

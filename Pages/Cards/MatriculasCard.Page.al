@@ -14,14 +14,14 @@ page 50113 "Registrations"
                 field("ID Curso"; Rec."ID Curso")
                 {
                     ApplicationArea = All;
-                    LookupPageId = "Lista de Cursos";
+                    LookupPageId = "Courses List";
                     ToolTip = 'Course code',
                     Comment = 'ESP="Código del curso"';
                 }
                 field("ID Estudiante"; Rec."ID Estudiante")
                 {
                     ApplicationArea = All;
-                    LookupPageId = "Lista de Estudiantes";
+                    LookupPageId = "Students List";
                     ToolTip = 'Student''s code of the course',
                     Comment = 'ESP="Código del estudiante del curso"';
                 }

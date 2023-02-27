@@ -1,4 +1,4 @@
-page 50105 "Horario"
+page 50105 "Shedule"
 {
     PageType = List;
     ApplicationArea = All;

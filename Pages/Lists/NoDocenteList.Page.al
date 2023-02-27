@@ -1,4 +1,4 @@
-page 50101 "Lista no docente"
+page 50101 "Assistants List"
 {
     PageType = List;
     ApplicationArea = All;

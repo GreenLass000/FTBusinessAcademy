@@ -1,4 +1,4 @@
-enum 50100 DiaSemana
+enum 50100 Week
 {
     Extensible = false;
 

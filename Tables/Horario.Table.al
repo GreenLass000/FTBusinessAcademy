@@ -6,7 +6,7 @@ table 50105 Horario
 
     fields
     {
-        field(1; "Dia"; Enum DiaSemana)
+        field(1; "Dia"; Enum Week)
         {
             Caption = 'Day',
             Comment = 'ESP="Dia"';

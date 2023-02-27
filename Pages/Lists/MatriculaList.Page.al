@@ -1,4 +1,4 @@
-page 50109 "Lista de Matriculas"
+page 50109 "Registrations List"
 {
     PageType = List;
     ApplicationArea = All;

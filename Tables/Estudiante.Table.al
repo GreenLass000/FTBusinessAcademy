@@ -17,7 +17,7 @@ table 50103 Estudiante
             Caption = 'Name',
             Comment = 'ESP="Nombre"';
         }
-        field(3; "Sexo"; Enum Sexo)
+        field(3; "Sexo"; Enum Sex)
         {
             Caption = 'Sex',
             Comment = 'ESP="Sexo"';
